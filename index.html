@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Customer Shopping Pattern Segmentation using K-Means Machine Learning">
+
+    <title>ShopCluster | Customer Segmentation</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="brand">
+
+            <div class="logo">
+                SC
+            </div>
+
+            <div>
+                <h3>ShopCluster</h3>
+                <span>Customer Intelligence</span>
+            </div>
+
+        </div>
+
+
+        <nav>
+
+            <a href="#home">Dashboard</a>
+
+            <a href="#segments">Segments</a>
+
+            <a href="#analyzer">Analyzer</a>
+
+            <a href="#workflow">Methodology</a>
+
+        </nav>
+
+
+        <button class="nav-button"
+                onclick="scrollToSection('analyzer')">
+
+            Analyze Customer
+
+        </button>
+
+    </header>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <!-- ================= HERO ================= -->
+
+        <section class="hero"
+                 id="home">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    SCIKIT-LEARN • K-MEANS CLUSTERING
+                </p>
+
+
+                <h1>
+                    Understand customers.
+                    <span>Discover patterns.</span>
+                </h1>
+
+
+                <p class="hero-description">
+
+                    An intelligent customer segmentation dashboard
+                    that analyzes shopping behavior and groups
+                    customers into meaningful behavioral segments.
+
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <button class="primary-button"
+                            onclick="scrollToSection('analyzer')">
+
+                        Explore Customer
+
+                    </button>
+
+
+                    <button class="outline-button"
+                            onclick="scrollToSection('workflow')">
+
+                        View Methodology
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Visual -->
+
+            <div class="hero-visual">
+
+                <div class="visual-header">
+
+                    <span>
+                        LIVE SEGMENTATION
+                    </span>
+
+                    <span class="live-dot"></span>
+
+                </div>
+
+
+                <div class="cluster-area">
+
+                    <div class="cluster cluster-one"></div>
+
+                    <div class="cluster cluster-two"></div>
+
+                    <div class="cluster cluster-three"></div>
+
+                    <div class="cluster cluster-four"></div>
+
+
+                    <div class="center-k">
+                        K
+                    </div>
+
+                </div>
+
+
+                <div class="visual-stats">
+
+                    <div>
+                        <strong>4</strong>
+                        <span>Segments</span>
+                    </div>
+
+                    <div>
+                        <strong>K-Means</strong>
+                        <span>Algorithm</span>
+                    </div>
+
+                    <div>
+                        <strong>ML</strong>
+                        <span>Clustering</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= OVERVIEW ================= -->
+
+        <section class="overview">
+
+            <div class="overview-card">
+
+                <span>ALGORITHM</span>
+
+                <strong>K-Means</strong>
+
+                <small>
+                    Unsupervised Learning
+                </small>
+
+            </div>
+
+
+            <div class="overview-card">
+
+                <span>FRAMEWORK</span>
+
+                <strong>Scikit-learn</strong>
+
+                <small>
+                    Machine Learning
+                </small>
+
+            </div>
+
+
+            <div class="overview-card">
+
+                <span>SEGMENTS</span>
+
+                <strong>4</strong>
+
+                <small>
+                    Customer Groups
+                </small>
+
+            </div>
+
+
+            <div class="overview-card">
+
+                <span>USE CASE</span>
+
+                <strong>Retail</strong>
+
+                <small>
+                    Customer Analytics
+                </small>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= SEGMENTS ================= -->
+
+        <section class="section"
+                 id="segments">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="eyebrow">
+                        CUSTOMER SEGMENTS
+                    </p>
+
+                    <h2>
+                        Four behavioral groups
+                    </h2>
+
+                </div>
+
+
+                <p>
+                    Customer profiles can be grouped according
+                    to shopping behavior, spending and activity.
+                </p>
+
+            </div>
+
+
+
+            <div class="segment-grid">
+
+                <!-- Premium -->
+
+                <article class="segment-card">
+
+                    <div class="segment-icon premium-icon">
+                        💎
+                    </div>
+
+                    <h3>
+                        Premium Shoppers
+                    </h3>
+
+                    <p>
+                        Customers with high spending,
+                        frequent purchases and strong
+                        customer value.
+                    </p>
+
+                    <span class="segment-tag premium-tag">
+                        HIGH VALUE
+                    </span>
+
+                </article>
+
+
+
+                <!-- Regular -->
+
+                <article class="segment-card">
+
+                    <div class="segment-icon regular-icon">
+                        🛍️
+                    </div>
+
+                    <h3>
+                        Regular Buyers
+                    </h3>
+
+                    <p>
+                        Customers who purchase consistently
+                        with moderate spending behavior.
+                    </p>
+
+                    <span class="segment-tag regular-tag">
+                        STEADY
+                    </span>
+
+                </article>
+
+
+
+                <!-- Occasional -->
+
+                <article class="segment-card">
+
+                    <div class="segment-icon occasional-icon">
+                        🎯
+                    </div>
+
+                    <h3>
+                        Occasional Buyers
+                    </h3>
+
+                    <p>
+                        Customers who make selective purchases
+                        with moderate shopping activity.
+                    </p>
+
+                    <span class="segment-tag occasional-tag">
+                        OCCASIONAL
+                    </span>
+
+                </article>
+
+
+
+                <!-- Low -->
+
+                <article class="segment-card">
+
+                    <div class="segment-icon low-icon">
+                        🌱
+                    </div>
+
+                    <h3>
+                        Low Activity
+                    </h3>
+
+                    <p>
+                        Customers with limited shopping
+                        activity and lower spending.
+                    </p>
+
+                    <span class="segment-tag low-tag">
+                        LOW ACTIVITY
+                    </span>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= ANALYZER ================= -->
+
+        <section class="analyzer"
+                 id="analyzer">
+
+            <div class="analyzer-heading">
+
+                <p class="eyebrow">
+                    CUSTOMER ANALYZER
+                </p>
+
+                <h2>
+                    Build a customer profile
+                </h2>
+
+                <p>
+                    Adjust the customer indicators and
+                    explore the predicted segment.
+                </p>
+
+            </div>
+
+
+
+            <div class="analyzer-grid">
+
+                <!-- INPUTS -->
+
+                <div class="input-panel">
+
+                    <label>
+
+                        Annual Income
+
+                        <div class="range-container">
+
+                            <input
+                                id="income"
+                                type="range"
+                                min="15000"
+                                max="150000"
+                                step="5000"
+                                value="65000"
+                            >
+
+                            <output id="incomeValue">
+                                $65,000
+                            </output>
+
+                        </div>
+
+                    </label>
+
+
+
+                    <label>
+
+                        Purchase Frequency / Month
+
+                        <div class="range-container">
+
+                            <input
+                                id="frequency"
+                                type="range"
+                                min="1"
+                                max="30"
+                                value="12"
+                            >
+
+                            <output id="frequencyValue">
+                                12
+                            </output>
+
+                        </div>
+
+                    </label>
+
+
+
+                    <label>
+
+                        Average Order Value
+
+                        <div class="range-container">
+
+                            <input
+                                id="orderValue"
+                                type="range"
+                                min="10"
+                                max="1000"
+                                step="10"
+                                value="180"
+                            >
+
+                            <output id="orderValueDisplay">
+                                $180
+                            </output>
+
+                        </div>
+
+                    </label>
+
+
+
+                    <label>
+
+                        Customer Loyalty
+
+                        <div class="range-container">
+
+                            <input
+                                id="loyalty"
+                                type="range"
+                                min="0"
+                                max="15"
+                                step="0.5"
+                                value="4"
+                            >
+
+                            <output id="loyaltyValue">
+                                4 yrs
+                            </output>
+
+                        </div>
+
+                    </label>
+
+
+                    <button class="analyze-button"
+                            onclick="analyzeCustomer()">
+
+                        🔍 Analyze Customer
+
+                    </button>
+
+                </div>
+
+
+
+                <!-- RESULT -->
+
+                <div class="prediction-panel">
+
+                    <p class="eyebrow">
+                        PREDICTED CUSTOMER SEGMENT
+                    </p>
+
+
+                    <div id="predictionBadge"
+                         class="prediction-badge premium">
+
+                        Premium Shopper
+
+                    </div>
+
+
+                    <h3 id="predictionTitle">
+                        Premium Shopper
+                    </h3>
+
+
+                    <p id="predictionDescription">
+
+                        This customer profile shows strong
+                        spending power and shopping activity.
+
+                    </p>
+
+
+                    <div class="confidence-row">
+
+                        <span>
+                            Segment strength
+                        </span>
+
+                        <strong id="confidence">
+                            78%
+                        </strong>
+
+                    </div>
+
+
+                    <div class="progress-bar">
+
+                        <span id="confidenceBar"></span>
+
+                    </div>
+
+
+
+                    <!-- Summary -->
+
+                    <div class="customer-summary">
+
+                        <div>
+                            <span>Income</span>
+                            <strong id="summaryIncome">
+                                $65k
+                            </strong>
+                        </div>
+
+
+                        <div>
+                            <span>Frequency</span>
+                            <strong id="summaryFrequency">
+                                12/mo
+                            </strong>
+                        </div>
+
+
+                        <div>
+                            <span>Order Value</span>
+                            <strong id="summaryOrder">
+                                $180
+                            </strong>
+                        </div>
+
+
+                        <div>
+                            <span>Loyalty</span>
+                            <strong id="summaryLoyalty">
+                                4 yrs
+                            </strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= WORKFLOW ================= -->
+
+        <section class="section"
+                 id="workflow">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="eyebrow">
+                        MACHINE LEARNING WORKFLOW
+                    </p>
+
+                    <h2>
+                        How K-Means finds segments
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="workflow">
+
+                <div class="workflow-step">
+
+                    <div class="step-number">
+                        01
+                    </div>
+
+                    <h3>
+                        Collect
+                    </h3>
+
+                    <p>
+                        Gather customer shopping
+                        behavior data.
+                    </p>
+
+                </div>
+
+
+
+                <div class="workflow-step">
+
+                    <div class="step-number">
+                        02
+                    </div>
+
+                    <h3>
+                        Preprocess
+                    </h3>
+
+                    <p>
+                        Clean and prepare
+                        customer features.
+                    </p>
+
+                </div>
+
+
+
+                <div class="workflow-step">
+
+                    <div class="step-number">
+                        03
+                    </div>
+
+                    <h3>
+                        Cluster
+                    </h3>
+
+                    <p>
+                        Apply the K-Means
+                        clustering algorithm.
+                    </p>
+
+                </div>
+
+
+
+                <div class="workflow-step">
+
+                    <div class="step-number">
+                        04
+                    </div>
+
+                    <h3>
+                        Analyze
+                    </h3>
+
+                    <p>
+                        Interpret the customer
+                        segments.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= K-MEANS ================= -->
+
+        <section class="kmeans-section">
+
+            <div class="kmeans-text">
+
+                <p class="eyebrow">
+                    ALGORITHM
+                </p>
+
+                <h2>
+                    K-Means Clustering
+                </h2>
+
+                <p>
+                    K-Means is an unsupervised machine learning
+                    algorithm that groups similar data points
+                    into clusters.
+                </p>
+
+                <div class="formula">
+                    Customer Data → Distance Calculation
+                    → Cluster Assignment → Customer Segment
+                </div>
+
+            </div>
+
+
+            <div class="kmeans-steps">
+
+                <div>
+                    <b>1</b>
+                    <span>Select K</span>
+                </div>
+
+                <div>
+                    <b>2</b>
+                    <span>Calculate Distance</span>
+                </div>
+
+                <div>
+                    <b>3</b>
+                    <span>Assign Cluster</span>
+                </div>
+
+                <div>
+                    <b>4</b>
+                    <span>Update Centroids</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= TECHNOLOGIES ================= -->
+
+        <section class="technology-section">
+
+            <p class="eyebrow">
+                TECHNOLOGY STACK
+            </p>
+
+            <div class="technology-grid">
+
+                <div>
+                    <strong>Python</strong>
+                    <span>Programming</span>
+                </div>
+
+                <div>
+                    <strong>Scikit-learn</strong>
+                    <span>Machine Learning</span>
+                </div>
+
+                <div>
+                    <strong>Pandas</strong>
+                    <span>Data Processing</span>
+                </div>
+
+                <div>
+                    <strong>NumPy</strong>
+                    <span>Numerical Computing</span>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div>
+            <strong>
+                ShopCluster
+            </strong>
+
+            <span>
+                Customer Shopping Pattern Segmentation
+            </span>
+        </div>
+
+
+        <span>
+            K-Means • Scikit-learn • Machine Learning
+        </span>
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
